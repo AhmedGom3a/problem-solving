@@ -1,8 +1,8 @@
 <?php
 
-require "Problems/LengthOfLastWord.php";
+// require "Problems/Example.php";
 
-$test = new Solution();
+// $test = new Solution();
 
-$result = $test->lengthOfLastWord("   this is a test     word  ");
-echo $result;
+// $result = $test->runExample("ExampleInput");
+// echo $result;
