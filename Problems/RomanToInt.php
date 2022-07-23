@@ -22,6 +22,11 @@ class Solution {
 
         for($i = 0; $i<strlen($chars); $i++)
         {
+            if(!isset($chars[$i+1])){
+                $sum += $current;
+                return $sum;
+            }
+
             $next = $this->romanSymbols[$chars[$i + 1]];
 
             if($next > $current){
@@ -33,7 +38,5 @@ class Solution {
             $sum += $current;
             $current = $next;
         }
-
-        return $sum;
     }
 }
