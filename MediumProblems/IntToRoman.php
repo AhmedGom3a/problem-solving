@@ -1,12 +1,7 @@
 <?php
 
 class Solution {
-
-    /**
-     * @param Integer $num
-     * @return String
-     */
-
+    
     private $romanSymbols = [
         1000 => "M",
         900 => "CM",
@@ -22,7 +17,11 @@ class Solution {
         4 => "IV",
         1 => "I",
     ];
-
+    
+    /**
+     * @param Integer $num
+     * @return String
+     */
     function intToRoman($num) {
 
         $result = "";
